@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Whose House?</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      #result {
+        font-size: 72px;
+      }
+
+      #result-container {
+        display: none;
+      }
+
+      #result-container.show {
+        display: block;
+      }
+
+      #stanford, #usc {
+        background-size: cover;
+        height: 500px;
+        opacity: 0.3;
+      }
+
+      #stanford {
+        background-image: url(http://www.stanforddaily.com/wp-content/uploads/2013/09/50_03-Football_20130907-_SCW3849.jpg);
+      }
+
+      #usc {
+        background-image: url(http://x.pac-12.com/sites/default/files/styles/homepage_featured/public/USC_fb_captains_USC_Football_Arizona_Rachel_Bennet_DSC2171110915_CROPPED__1452732732.jpg?itok=N_2i0-l1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Whose House?</h1>
+      <h4>Click the button below to see whose house we will watch the Stanford vs. USC game on Saturday</h4>
+      <button id="whose-house-button" class="btn btn-default" data-toggle="modal" data-target="#result-modal">
+        Whose house?
+      </button>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div class="row">
+        <div class="col-sm-6" id="stanford"">
+        </div>
+        <div class="col-sm-6" id="usc">
+        </div>
+      </div>
+    </div>
+
+    <div id="result-modal" class="modal" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            And the winner is...
+          </div>
+          <div class="modal-body">
+            <div id="result-container">
+              <h1 id="result"></h1>
+              <p>(and Stanford of course)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/whosehouse.js"></script>
+    <script>$('#whose-house-button').click(choose);</script>
+  </body>
+</html>
