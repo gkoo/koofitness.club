@@ -30,9 +30,11 @@ function WhoseHouse() {
 var wh = new WhoseHouse();
 
 var baselineRotation = 0;
-
+var transition_end_events = 'transitionend webkitTransitionEnd \
+                             oTransitionEnd otransitionend MSTransitionEnd'
 
 function displayWhoseHouseWinner() {
+  $('#wheel').children().css('font-weight', 'Normal');
   var winnerHouse = wh.selectRandomHouse();
   var degrees;
   switch(winnerHouse) {
@@ -57,6 +59,16 @@ function displayWhoseHouseWinner() {
   baselineRotation = Math.floor(finalRotation / 360) * 360;
   console.log('houses: ' + wh.houses.join());
   console.log('winner: ' + winnerHouse);
+
+  // Bold the winner when done rotating
+  $('#wheel').bind(transition_end_events,
+      (function(winnerHouse) {
+        return function() {
+          $('#wheel-' + winnerHouse).css('font-weight', 'Bold');
+          $(this).unbind(transition_end_events)
+        };
+      })(winnerHouse)
+  );
   $('#wheel').css('transform', 'rotate(' + finalRotation + 'deg)');
 }
 
