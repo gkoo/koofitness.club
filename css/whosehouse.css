@@ -10,17 +10,88 @@
   display: block;
 }
 
-#stanford, #usc {
+#stanford, #away {
   background-size: cover;
   height: 500px;
   opacity: 0.3;
 }
 
 #stanford {
-  background-image: url(http://www.stanforddaily.com/wp-content/uploads/2013/09/50_03-Football_20130907-_SCW3849.jpg);
+  background-image: url(/img/stanfordfootball.jpg);
 }
 
-#usc {
-  background-image: url(http://x.pac-12.com/sites/default/files/styles/homepage_featured/public/USC_fb_captains_USC_Football_Arizona_Rachel_Bennet_DSC2171110915_CROPPED__1452732732.jpg?itok=N_2i0-l1);
+#away {
+  background-image: url(/img/san_diego_aztecs.jpg);
 }
 
+.masthead-nav > li > a {
+  color: #000;
+}
+
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+#wheel-container {
+  text-align: center;
+}
+
+#wheel {
+  background-color: #fff;
+  border: 5px solid #000;
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 250px;
+  transform: rotate(0deg);
+  transition: transform 10s;
+  transition-timing-function: ease;
+  -webkit-transition: all 10s;
+  -webkit-transition-timing-function: ease;
+}
+
+.wheel-item {
+  font-size: 24px;
+  position: absolute;
+}
+
+#wheel-borderlands {
+  top: 50px;
+  left: 180px;
+}
+
+#wheel-kfc {
+  top: 230px;
+  right: -20px;
+  transform: rotate(90deg);
+}
+
+#wheel-ajlands {
+  bottom: 50px;
+  left: 200px;
+  transform: rotate(180deg);
+}
+
+#wheel-tuscany {
+  top: 250px;
+  left: 20px;
+  transform: rotate(-90deg);
+}
+
+.main-content {
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+.wheel-check-container {
+  text-align: right;
+}
+
+.background-square {
+  float: left;
+}

@@ -3,39 +3,95 @@
   <head>
     <title>Whose House?</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
     <link href="css/whosehouse.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
-      <h1>Whose House?</h1>
-      <h4>Click the button below to see whose house we will watch the Stanford vs. USC game on Saturday</h4>
-      <button id="whose-house-button" class="btn btn-default" data-toggle="modal" data-target="#result-modal">
-        Whose house?
-      </button>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <div class="row">
-        <div class="col-sm-6" id="stanford"">
-        </div>
-        <div class="col-sm-6" id="usc">
+      <div class="masthead clearfix">
+        <div class="inner">
+          <h3 class="masthead-brand">Koo Fitness Club</h3>
+          <nav>
+            <ul class="nav masthead-nav">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="whosehouse.html">Whose House?</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </div>
+      <div class="main-content">
+        <h1>Whose House?</h1>
 
-    <div id="result-modal" class="modal" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            And the winner is...
+        <!-- Options -->
+        <section>
+          <h5>OPTIONS</h5>
+          <div class="row">
+            <div class="col-sm-1 wheel-check-container">
+              <input id="include-borderlands" name="include-borderlands" class="wheel-check" type="checkbox" checked>
+            </div>
+            <div class="col-sm-11">
+              <label for="include-borderlands">Include Borderlands?</label>
+            </div>
           </div>
-          <div class="modal-body">
-            <div id="result-container">
-              <h1 id="result"></h1>
-              <p>(and Stanford of course)</p>
+          <div class="row">
+            <div class="col-sm-1 wheel-check-container">
+              <input id="include-kfc" name="include-kfc" type="checkbox" class="wheel-check" checked>
+            </div>
+            <div class="col-sm-11">
+              <label for="include-kfc">Include Koo Fitness Club?</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-1 wheel-check-container">
+              <input id="include-ajlands" name="include-ajlands" type="checkbox" class="wheel-check" checked>
+            </div>
+            <div class="col-sm-11">
+              <label for="include-ajlands">Include AJLands?</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-1 wheel-check-container">
+              <input id="include-tuscany" name="include-tuscany" type="checkbox" class="wheel-check" checked>
+            </div>
+            <div class="col-sm-11">
+              <label for="include-tuscany">Include Tuscany?</label>
+            </div>
+          </div>
+        </section>
+
+        <h4>Click the button below to see whose house we will watch the Stanford vs. San Diego State game on Saturday</h4>
+        <button id="whose-house-button" class="btn btn-default">
+          Whose house?
+        </button>
+        <br/>
+        <br/>
+
+
+        <div id="wheel-container">
+          <div>
+            <h3>The winner is...</h3>
+          </div>
+          <div class="col-sm-5 col-sm-offset-1 background-square" id="stanford"></div>
+          <div class="col-sm-5 background-square" id="away"></div>
+          <div id="wheel">
+            <div id="wheel-borderlands" class="wheel-item">
+              Borderlands
+            </div>
+            <div id="wheel-kfc" class="wheel-item">
+              Koo Fitness Club
+            </div>
+            <div id="wheel-ajlands" class="wheel-item">
+              AJLands
+            </div>
+            <div id="wheel-tuscany" class="wheel-item">
+              Tuscany
             </div>
           </div>
         </div>
@@ -44,6 +100,5 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/whosehouse.js"></script>
-    <script>$('#whose-house-button').click(choose);</script>
   </body>
 </html>
