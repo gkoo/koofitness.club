@@ -10,14 +10,15 @@ function WhoseHouse() {
 
   this.addHouse = function(house) {
     if (this.houses.indexOf(house) >= 0) return;
-
     this.houses.push(house);
+    $('#wheel-' + house).show();
   };
 
   this.removeHouse = function(house) {
     var idx = this.houses.indexOf(house);
     if (idx === -1) return;
     this.houses.splice(idx, 1);
+    $('#wheel-' + house).hide();
   };
 
   this.selectRandomHouse = function() {
@@ -64,11 +65,13 @@ function displayWhoseHouseWinner() {
   $('#wheel').bind(transitionEndEvents,
       (function(winnerHouse) {
         return function() {
+          $('.wheel-check').attr('disabled', false);
           $('#wheel-' + winnerHouse).css('font-weight', 'bold');
           $(this).unbind(transitionEndEvents)
         };
       })(winnerHouse)
   );
+  $('.wheel-check').attr('disabled', true);
   $('#wheel').css('transform', 'rotate(' + finalRotation + 'deg)');
 }
 
