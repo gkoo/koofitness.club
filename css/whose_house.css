@@ -17,11 +17,11 @@
 }
 
 #stanford {
-  background-image: url(/img/stanfordfootball.jpg);
+  background-image: url(../img/stanfordfootball.jpg);
 }
 
 #away {
-  background-image: url(/img/san_diego_aztecs.jpg);
+  background-image: url(../img/san_diego_aztecs.jpg);
 }
 
 .masthead-nav > li > a {
