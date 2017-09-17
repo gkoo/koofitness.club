@@ -22,7 +22,10 @@ function WhoseHouse() {
   };
 
   this.selectRandomHouse = function() {
-    if (this.houses.length === 0) alert('Please add at least one house');
+    if (this.houses.length === 0) {
+      alert('Please add at least one house');
+      return null;
+    }
     var randInt = Math.floor(Math.random()*this.houses.length);
     return this.houses[randInt];
   };
@@ -37,6 +40,7 @@ var transitionEndEvents = 'transitionend webkitTransitionEnd \
 function displayWhoseHouseWinner() {
   $('#wheel').children().css('font-weight', 'normal');
   var winnerHouse = wh.selectRandomHouse();
+  if (winnerHouse == null) return;
   var degrees;
   switch(winnerHouse) {
     case 'borderlands':
@@ -65,7 +69,7 @@ function displayWhoseHouseWinner() {
   $('#wheel').bind(transitionEndEvents,
       (function(winnerHouse) {
         return function() {
-          $('.wheel-check').attr('disabled', false);
+          $('.wheel-check').removeAttr('disabled');
           $('#wheel-' + winnerHouse).css('font-weight', 'bold');
           $(this).unbind(transitionEndEvents)
         };
