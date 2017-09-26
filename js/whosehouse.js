@@ -10,18 +10,22 @@ function WhoseHouse() {
 
   this.addHouse = function(house) {
     if (this.houses.indexOf(house) >= 0) return;
-
     this.houses.push(house);
+    $('#wheel-' + house).show();
   };
 
   this.removeHouse = function(house) {
     var idx = this.houses.indexOf(house);
     if (idx === -1) return;
     this.houses.splice(idx, 1);
+    $('#wheel-' + house).hide();
   };
 
   this.selectRandomHouse = function() {
-    if (this.houses.length === 0) alert('Please add at least one house');
+    if (this.houses.length === 0) {
+      alert('Please add at least one house');
+      return null;
+    }
     var randInt = Math.floor(Math.random()*this.houses.length);
     return this.houses[randInt];
   };
@@ -36,6 +40,7 @@ var transitionEndEvents = 'transitionend webkitTransitionEnd \
 function displayWhoseHouseWinner() {
   $('#wheel').children().css('font-weight', 'normal');
   var winnerHouse = wh.selectRandomHouse();
+  if (winnerHouse == null) return;
   var degrees;
   switch(winnerHouse) {
     case 'borderlands':
@@ -64,11 +69,13 @@ function displayWhoseHouseWinner() {
   $('#wheel').bind(transitionEndEvents,
       (function(winnerHouse) {
         return function() {
+          $('.wheel-check').removeAttr('disabled');
           $('#wheel-' + winnerHouse).css('font-weight', 'bold');
           $(this).unbind(transitionEndEvents)
         };
       })(winnerHouse)
   );
+  $('.wheel-check').attr('disabled', true);
   $('#wheel').css('transform', 'rotate(' + finalRotation + 'deg)');
 }
 
