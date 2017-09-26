@@ -21,7 +21,7 @@
 }
 
 #away {
-  background-image: url(../img/san_diego_aztecs.jpg);
+  background-image: url(/img/ucla_bruins.jpg);
 }
 
 .masthead-nav > li > a {
@@ -48,10 +48,11 @@
   height: 500px;
   border-radius: 250px;
   transform: rotate(0deg);
+
+  -webkit-transition: transform 10s;
+  -webkit-transition-timing-function: ease;
   transition: transform 10s;
   transition-timing-function: ease;
-  -webkit-transition: all 10s;
-  -webkit-transition-timing-function: ease;
 }
 
 .wheel-item {
