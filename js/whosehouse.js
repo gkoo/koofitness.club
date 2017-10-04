@@ -8,6 +8,44 @@ function WhoseHouse() {
     'tuscany',
   ];
 
+  this.games = [
+    {
+      opponent: 'Utah',
+      date: new Date(2017, 10, 7),
+      imgSrc: 'utah_utes.jpg'
+    },
+    {
+      opponent: 'Oregon',
+      date: new Date(2017, 10, 14),
+      imgSrc: 'oregon_ducks.jpg'
+    },
+    {
+      opponent: 'Oregon State',
+      date: new Date(2017, 10, 26),
+      imgSrc: 'oregon_state.jpg'
+    },
+    {
+      opponent: 'Washington State',
+      date: new Date(2017, 11, 4),
+      imgSrc: 'washington_state.png'
+    },
+    {
+      opponent: 'Washington',
+      date: new Date(2017, 11, 10),
+      imgSrc: 'washington_huskies.jpg'
+    },
+    {
+      opponent: 'Cal',
+      date: new Date(2017, 11, 18),
+      imgSrc: 'cal_bears.jpg'
+    },
+    {
+      opponent: 'Notre Dame',
+      date: new Date(2017, 11, 25),
+      imgSrc: 'notre_dame.jpg'
+    }
+  ];
+
   this.addHouse = function(house) {
     if (this.houses.indexOf(house) >= 0) return;
 
@@ -25,9 +63,23 @@ function WhoseHouse() {
     var randInt = Math.floor(Math.random()*this.houses.length);
     return this.houses[randInt];
   };
+
+  this.gameHasNotPassed = function(game) {
+    return new Date().getTime() < game.date.getTime();
+  };
+
+  this.selectGame = function() {
+    var nextGame = this.games.find(this.gameHasNotPassed);
+
+    if (nextGame) {
+      $('#opponent-name').text(nextGame.opponent);
+      $('#away').css('background-image', 'url(/img/' + nextGame.imgSrc + ')');
+    }
+  };
 }
 
 var wh = new WhoseHouse();
+wh.selectGame();
 
 var baselineRotation = 0;
 var transitionEndEvents = 'transitionend webkitTransitionEnd \
