@@ -11,37 +11,37 @@ function WhoseHouse() {
   this.games = [
     {
       opponent: 'Utah',
-      date: new Date(2017, 10, 7),
+      date: new Date(2017, 9, 7),
       imgSrc: 'utah_utes.jpg'
     },
     {
       opponent: 'Oregon',
-      date: new Date(2017, 10, 14),
+      date: new Date(2017, 9, 14),
       imgSrc: 'oregon_ducks.jpg'
     },
     {
       opponent: 'Oregon State',
-      date: new Date(2017, 10, 26),
+      date: new Date(2017, 9, 26),
       imgSrc: 'oregon_state.jpg'
     },
     {
       opponent: 'Washington State',
-      date: new Date(2017, 11, 4),
+      date: new Date(2017, 10, 4),
       imgSrc: 'washington_state.png'
     },
     {
       opponent: 'Washington',
-      date: new Date(2017, 11, 10),
+      date: new Date(2017, 10, 10),
       imgSrc: 'washington_huskies.jpg'
     },
     {
       opponent: 'Cal',
-      date: new Date(2017, 11, 18),
+      date: new Date(2017, 10, 18),
       imgSrc: 'cal_bears.jpg'
     },
     {
       opponent: 'Notre Dame',
-      date: new Date(2017, 11, 25),
+      date: new Date(2017, 10, 25),
       imgSrc: 'notre_dame.jpg'
     }
   ];
