@@ -12,3 +12,7 @@ thead {
   margin: 10px 0;
   padding: 5px;
 }
+
+.yuriko-task::after {
+  content: '🕷';
+}
