@@ -70,6 +70,11 @@ var tasks = [
     status: IN_PROGRESS,
     assignee: USER_GORDON
   },
+  {
+    name: 'Legend of Zelda: Ocarina of Time',
+    status: IN_PROGRESS,
+    assignee: USER_YURIKO
+  },
 ];
 
 tasks.forEach(function(task) {
