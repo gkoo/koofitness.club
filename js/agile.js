@@ -72,7 +72,7 @@ var tasks = [
   },
   {
     name: 'Legend of Zelda: Ocarina of Time',
-    status: IN_PROGRESS,
+    status: TODO,
     assignee: USER_YURIKO
   },
 ];
