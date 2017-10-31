@@ -60,6 +60,16 @@ var tasks = [
     name: 'Game of Thrones',
     assignee: USER_GORDON
   },
+  {
+    name: 'Banjo Kazooie',
+    status: IN_PROGRESS,
+    assignee: USER_GORDON
+  },
+  {
+    name: 'Rayman Legends',
+    status: IN_PROGRESS,
+    assignee: USER_GORDON
+  },
 ];
 
 tasks.forEach(function(task) {
