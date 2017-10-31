@@ -52,44 +52,17 @@
             </div>
             <div class="panel-body">
               <div class="row sprint">
-                <div class="sprint-col col-sm-4">
+                <div id="todo" class="sprint-col col-sm-4">
                   <h5>To Do</h5>
-                  <div class="sprint-task">
-                    Attack on Titan Season 2
-                  </div>
-                  <div class="sprint-task">
-                    Stranger Things Season 2
-                  </div>
-                  <div class="sprint-task yuriko-task">
-                    Final Fantasy X-2
-                  </div>
-                  <div class="sprint-task">
-                    Starcraft 2: Legacy of the Void
-                  </div>
-                  <div class="sprint-task">
-                    Cuphead
-                  </div>
-                  <div class="sprint-task">
-                    Undertale
-                  </div>
+                  <div class="tasks"></div>
                 </div>
-                <div class="sprint-col col-sm-4">
+                <div id="in-progress" class="sprint-col col-sm-4">
                   <h5>In progress</h5>
-                  <div class="sprint-task">
-                    Factorio
-                  </div>
-                  <div class="sprint-task">
-                    Nier Automata
-                  </div>
+                  <div class="tasks"></div>
                 </div>
-                <div class="sprint-col col-sm-4">
+                <div id="completed" class="sprint-col col-sm-4">
                   <h5>Done</h5>
-                  <div class="sprint-task">
-                    Horizon Zero Dawn
-                  </div>
-                  <div class="sprint-task">
-                    Blame!
-                  </div>
+                  <div class="tasks"></div>
                 </div>
               </div>
             </div>
@@ -100,37 +73,9 @@
               <h1 class="panel-title">Backlog</h1>
             </div>
             <div class="panel-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <td>Name</td>
-                    <td>Type</td>
-                    <td>Date added</td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Game of Thrones</td>
-                    <td>TV</td>
-                    <td>10/8/2017</td>
-                  </tr>
-                  <tr>
-                    <td>Attack on Titan Season 2</td>
-                    <td>TV</td>
-                    <td>10/8/2017</td>
-                  </tr>
-                  <tr>
-                    <td>Nier Automata</td>
-                    <td>Game</td>
-                    <td>10/8/2017</td>
-                  </tr>
-                  <tr>
-                    <td>Cuphead</td>
-                    <td>Game</td>
-                    <td>10/8/2017</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div id="backlog">
+                <div class="tasks"></div>
+              </div>
             </div>
           </div>
 
@@ -139,15 +84,8 @@
       </div>
 
     </div>
-
-    <!-- bootstrap core javascript
-    ================================================== -->
-    <!-- placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jquery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- ie10 viewport hack for surface/desktop windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/agile.js"></script>
   </body>
 </html>
 
