@@ -13,7 +13,7 @@ var tasks = [
   },
   {
     name: 'Stranger Things Season 2',
-    status: TODO,
+    status: IN_PROGRESS,
     assignee: USER_GORDON
   },
   {
@@ -72,7 +72,12 @@ var tasks = [
   },
   {
     name: 'Legend of Zelda: Ocarina of Time',
-    status: TODO,
+    status: IN_PROGRESS,
+    assignee: USER_YURIKO
+  },
+  {
+    name: 'Final Fantasy XIII: Lightning Returns',
+    status: IN_PROGRESS,
     assignee: USER_YURIKO
   },
 ];
