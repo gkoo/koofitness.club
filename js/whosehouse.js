@@ -60,11 +60,19 @@ function WhoseHouse() {
   };
 
   this.selectRandomHouse = function() {
+    var randInt;
+    var nameSum;
+
     if (this.houses.length === 0) {
       alert('Please add at least one house');
       return null;
     }
-    var randInt = Math.floor(Math.random()*this.houses.length);
+    if (this.nextGame) {
+      nameSum = this.nextGame.opponent.split('').reduce(function(sum, char) { return sum + char.charCodeAt(0); }, 0);
+      randInt = nameSum % this.houses.length;
+    } else {
+      randInt = Math.floor(Math.random()*this.houses.length);
+    }
     return this.houses[randInt];
   };
 
@@ -73,11 +81,11 @@ function WhoseHouse() {
   };
 
   this.selectGame = function() {
-    var nextGame = this.games.find(this.gameHasNotPassed);
+    this.nextGame = this.games.find(this.gameHasNotPassed);
 
-    if (nextGame) {
-      $('#opponent-name').text(nextGame.opponent);
-      $('#away').css('background-image', 'url(/img/' + nextGame.imgSrc + ')');
+    if (this.nextGame) {
+      $('#opponent-name').text(this.nextGame.opponent);
+      $('#away').css('background-image', 'url(/img/' + this.nextGame.imgSrc + ')');
     }
   };
 }
