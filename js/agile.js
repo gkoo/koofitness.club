@@ -43,7 +43,7 @@ var tasks = [
   },
   {
     name: 'Nier: Automata',
-    status: IN_PROGRESS,
+    status: COMPLETED,
     assignee: USER_GORDON
   },
   {
