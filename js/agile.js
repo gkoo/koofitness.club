@@ -28,12 +28,12 @@ var tasks = [
   },
   {
     name: 'Cuphead',
-    status: TODO,
+    status: COMPLETED,
     assignee: USER_GORDON
   },
   {
     name: 'Undertale',
-    status: TODO,
+    status: IN_PROGRESS,
     assignee: USER_GORDON
   },
   {
@@ -80,6 +80,26 @@ var tasks = [
     status: IN_PROGRESS,
     assignee: USER_YURIKO
   },
+  {
+    name: 'Hollow Knight',
+    status: TODO,
+    assignee: USER_GORDON
+  },
+  {
+    name: 'Rise of Tomb Raider',
+    status: TODO,
+    assignee: USER_GORDON
+  },
+  {
+    name: 'Spider-man: Homecoming',
+    status: TODO,
+    assignee: USER_GORDON
+  },
+  {
+    name: 'Legend of Zelda: Skyward Sword',
+    status: TODO,
+    assignee: USER_GORDON
+  }
 ];
 
 tasks.forEach(function(task) {
