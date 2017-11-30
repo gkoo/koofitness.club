@@ -10,40 +10,62 @@ function WhoseHouse() {
 
   this.games = [
     {
-      opponent: 'Utah',
-      date: new Date(2017, 9, 7),
+      opponent: 'San Diego State',
+      date: new Date(2018, 8, 1),
       imgSrc: 'utah_utes.jpg'
     },
     {
-      opponent: 'Oregon',
-      date: new Date(2017, 9, 14),
-      imgSrc: 'oregon_ducks.jpg'
+      opponent: 'USC',
+      date: new Date(2018, 8, 8),
     },
     {
-      opponent: 'Oregon State',
-      date: new Date(2017, 9, 26),
-      imgSrc: 'oregon_state.jpg'
+      opponent: 'UC Davis',
+      date: new Date(2018, 8, 15),
+    },
+    {
+      opponent: 'Oregon',
+      date: new Date(2018, 8, 22),
+      imgSrc: 'oregon_ducks.png'
+    },
+    {
+      opponent: 'Notre Dame',
+      date: new Date(2018, 8, 29),
+      imgSrc: 'notre_dame.jpg'
+    },
+    {
+      opponent: 'Utah',
+      date: new Date(2018, 9, 6),
+      imgSrc: 'utah_utes.jpg'
+    },
+    {
+      opponent: 'Arizona State',
+      date: new Date(2018, 9, 18)
     },
     {
       opponent: 'Washington State',
-      date: new Date(2017, 10, 4),
+      date: new Date(2018, 9, 27),
       imgSrc: 'washington_state.png'
     },
     {
       opponent: 'Washington',
-      date: new Date(2017, 10, 10),
+      date: new Date(2018, 10, 3),
       imgSrc: 'washington_huskies.jpg'
     },
     {
+      opponent: 'Oregon State',
+      date: new Date(2018, 10, 10),
+      imgSrc: 'oregon_state.jpg'
+    },
+    {
       opponent: 'Cal',
-      date: new Date(2017, 10, 18),
+      date: new Date(2018, 10, 17),
       imgSrc: 'cal_bears.jpg'
     },
     {
-      opponent: 'Notre Dame',
-      date: new Date(2017, 10, 25),
-      imgSrc: 'notre_dame.jpg'
-    }
+      opponent: 'UCLA',
+      date: new Date(2018, 10, 24),
+      imgSrc: 'ucla_bruins.jpg'
+    },
   ];
 
   this.addHouse = function(house) {
