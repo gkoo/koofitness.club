@@ -9,11 +9,12 @@ var USER_AJ = 2;
 var tasks = [
   {
     name: 'Attack on Titan Season 2',
+    status: COMPLETED,
     assignee: USER_YURIKO
   },
   {
     name: 'Stranger Things Season 2',
-    status: IN_PROGRESS,
+    status: COMPLETED,
     assignee: USER_GORDON
   },
   {
@@ -82,21 +83,30 @@ var tasks = [
   },
   {
     name: 'Hollow Knight',
-    status: TODO,
+    status: IN_PROGRESS,
     assignee: USER_GORDON
   },
   {
     name: 'Rise of Tomb Raider',
-    status: TODO,
+    status: COMPLETED,
     assignee: USER_GORDON
   },
   {
     name: 'Spider-man: Homecoming',
-    status: TODO,
+    status: COMPLETED,
     assignee: USER_GORDON
   },
   {
     name: 'Legend of Zelda: Skyward Sword',
+    assignee: USER_GORDON
+  },
+  {
+    name: 'Divinity: Original Sin',
+    status: IN_PROGRESS,
+    assignee: USER_GORDON
+  },
+  {
+    name: 'The Division',
     status: TODO,
     assignee: USER_GORDON
   }
