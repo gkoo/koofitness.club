@@ -58,7 +58,8 @@ var tasks = [
     assignee: USER_YURIKO
   },
   {
-    name: 'Game of Thrones',
+    name: 'Game of Thrones Season 3',
+    status: IN_PROGRESS,
     assignee: USER_GORDON
   },
   {
@@ -83,7 +84,7 @@ var tasks = [
   },
   {
     name: 'Hollow Knight',
-    status: IN_PROGRESS,
+    status: COMPLETED,
     assignee: USER_GORDON
   },
   {
@@ -107,7 +108,12 @@ var tasks = [
   },
   {
     name: 'The Division',
-    status: TODO,
+    status: IN_PROGRESS,
+    assignee: USER_GORDON
+  },
+  {
+    name: 'Uncharted: The Lost Legacy',
+    status: IN_PROGRESS,
     assignee: USER_GORDON
   }
 ];
