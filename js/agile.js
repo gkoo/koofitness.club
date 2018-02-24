@@ -59,7 +59,7 @@ var tasks = [
   },
   {
     name: 'Game of Thrones Season 3',
-    status: IN_PROGRESS,
+    status: COMPLETED,
     assignee: USER_GORDON
   },
   {
@@ -69,7 +69,7 @@ var tasks = [
   },
   {
     name: 'Rayman Legends',
-    status: IN_PROGRESS,
+    status: COMPLETED,
     assignee: USER_GORDON
   },
   {
@@ -113,7 +113,7 @@ var tasks = [
   },
   {
     name: 'Uncharted: The Lost Legacy',
-    status: IN_PROGRESS,
+    status: COMPLETED,
     assignee: USER_GORDON
   }
 ];
