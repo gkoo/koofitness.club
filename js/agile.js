@@ -108,13 +108,27 @@ var tasks = [
   },
   {
     name: 'The Division',
-    status: IN_PROGRESS,
     assignee: USER_GORDON
   },
   {
     name: 'Uncharted: The Lost Legacy',
     status: COMPLETED,
     assignee: USER_GORDON
+  },
+  {
+    name: 'Lara Croft and the Temple of Osiris',
+    status: IN_PROGRESS,
+  },
+  {
+    name: 'Civilization V',
+    status: IN_PROGRESS,
+  },
+  {
+    name: 'Assassin\'s Creed: Origins',
+    status: IN_PROGRESS,
+  },
+  {
+    name: 'Super Mario Odyssey',
   }
 ];
 
