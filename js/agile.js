@@ -74,7 +74,7 @@ var tasks = [
   },
   {
     name: 'Legend of Zelda: Ocarina of Time',
-    status: IN_PROGRESS,
+    status: COMPLETED,
     assignee: USER_YURIKO
   },
   {
@@ -108,6 +108,7 @@ var tasks = [
   },
   {
     name: 'The Division',
+    status: IN_PROGRESS,
     assignee: USER_GORDON
   },
   {
@@ -125,6 +126,21 @@ var tasks = [
   },
   {
     name: 'Assassin\'s Creed: Origins',
+    status: COMPLETED,
+    assignee: USER_GORDON
+  },
+  {
+    name: 'The Witcher 3',
+    status: IN_PROGRESS,
+    assignee: USER_GORDON
+  },
+  {
+    name: 'Resident Evil 7',
+    status: TODO,
+    assignee: USER_GORDON
+  },
+  {
+    name: 'Fullmetal Alchemist: Brotherhood',
     status: IN_PROGRESS,
   },
   {
