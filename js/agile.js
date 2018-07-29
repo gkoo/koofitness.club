@@ -99,7 +99,8 @@ var tasks = [
   },
   {
     name: 'Legend of Zelda: Skyward Sword',
-    assignee: USER_GORDON
+    assignee: USER_GORDON,
+    status: COMPLETED
   },
   {
     name: 'Divinity: Original Sin',
@@ -118,7 +119,7 @@ var tasks = [
   },
   {
     name: 'Lara Croft and the Temple of Osiris',
-    status: IN_PROGRESS,
+    status: COMPLETED,
   },
   {
     name: 'Civilization V',
@@ -136,7 +137,7 @@ var tasks = [
   },
   {
     name: 'Resident Evil 7',
-    status: TODO,
+    status: IN_PROGRESS,
     assignee: USER_GORDON
   },
   {
@@ -145,6 +146,7 @@ var tasks = [
   },
   {
     name: 'Super Mario Odyssey',
+    status: IN_PROGRESS,
   }
 ];
 
