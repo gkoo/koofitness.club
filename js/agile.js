@@ -104,7 +104,7 @@ var tasks = [
   },
   {
     name: 'Divinity: Original Sin',
-    status: IN_PROGRESS,
+    status: COMPLETED,
     assignee: USER_GORDON
   },
   {
@@ -137,7 +137,7 @@ var tasks = [
   },
   {
     name: 'Resident Evil 7',
-    status: IN_PROGRESS,
+    status: COMPLETED,
     assignee: USER_GORDON
   },
   {
@@ -146,6 +146,10 @@ var tasks = [
   },
   {
     name: 'Super Mario Odyssey',
+    status: IN_PROGRESS,
+  },
+  {
+    name: 'Terraria',
     status: IN_PROGRESS,
   }
 ];
